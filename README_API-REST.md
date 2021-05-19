@@ -18,8 +18,9 @@ El mismo está divido dos partes:\
 
 ## Visualización de los procesos. 
 ## Proceso 1:
-
+https://github.com/carlosbrito20/API-REST/blob/main/app.py
 ## Proceso 2:
+https://github.com/carlosbrito20/API-REST/blob/main/main.py
 
 ## Ejecución
 Para ejecutar se deben instalar las librerias de python \
