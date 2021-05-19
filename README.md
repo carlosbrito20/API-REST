@@ -1,21 +1,21 @@
 # API-REST
 
-Desarrollo de dos procesos en python.
-1- Uso de Flask para levantar dos json.
-2- Proceso que consume la API de pokemon.
+Desarrollo de dos procesos en python. \
+1- Uso de Flask para levantar dos json. \
+2- Proceso que consume la API de pokemon. \
 
 
-## Información
-Proceso 1:
-  Para levantar dos json con el uso de Flask tenemos el proceso llamado app.py que levanta los json que se encuentran dentro de los archivos list_poke.py y name_poke.py.
-
-Proceso 2:
-Luego tenemos el proceso main.py el cual consume la API de pokemon https://pokeapi.co/api/v2/pokemon/. 
-El mismo está divido dos partes:
-  Parte 1. Listar nombres de pokemones de 20 en 20 por offset. siempre y cuando el usuario desee seguir listando.
-  Parte 2. Dado el nombre de un pokemon mostrar el mismo por pantalla.
-
-## Visualización de los procesos.
+## Información \
+Proceso 1: V
+  Para levantar dos json con el uso de Flask tenemos el proceso llamado app.py que levanta los json que se encuentran dentro de los archivos list_poke.py y name_poke.py. \
+\
+Proceso 2: \
+Luego tenemos el proceso main.py el cual consume la API de pokemon https://pokeapi.co/api/v2/pokemon/. \
+El mismo está divido dos partes:\
+  Parte 1. Listar nombres de pokemones de 20 en 20 por offset. siempre y cuando el usuario desee seguir listando. \
+  Parte 2. Dado el nombre de un pokemon mostrar el mismo por pantalla. \
+\
+## Visualización de los procesos. \
 Proceso 1:
 
 Proceso 2:
