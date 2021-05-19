@@ -6,11 +6,11 @@ Desarrollo de dos procesos en python. \
 
 
 ## Información 
-## Proceso 1: \
+## Proceso 1: 
   Para levantar dos json con el uso de Flask: 
     Tenemos el proceso llamado app.py que levanta los json que se encuentran dentro de los archivos list_poke.py y name_poke.py. 
 
-## Proceso 2: \
+## Proceso 2: 
 Luego tenemos el proceso main.py el cual consume la API de pokemon https://pokeapi.co/api/v2/pokemon/. \
 El mismo está divido dos partes:\
   Parte 1. Listar nombres de pokemones de 20 en 20 por offset. siempre y cuando el usuario desee seguir listando. \
