@@ -54,6 +54,7 @@ if __name__ == '__main__': \
 ## Codigo proceso 2
 import requests
 
+#Listado de pokemon
 def get_poke(url='https://pokeapi.co/api/v2/pokemon-form/', offset=0): \
     var = {'offset' : offset} if offset else {}
 
@@ -83,12 +84,12 @@ def get_poke(url='https://pokeapi.co/api/v2/pokemon-form/', offset=0): \
                     exit
                 else: print("Valor errado") 
                 
-## #########################################################################################
+#Nombre de pokemon
 
-def main ():
-    nombre = input("-- Introduzca el nombre del pokemon: ")
-    print("Se muestra pokemon buscado")
-    url_completa = url_name + nombre
+def main (): \
+    nombre = input("-- Introduzca el nombre del pokemon: ") \
+    print("Se muestra pokemon buscado") \
+    url_completa = url_name + nombre \
     data =  get_poke_name(url_completa)
     
     if data:
@@ -104,23 +105,23 @@ def get_poke_name(url_v=""):
 
         return data 
 
-## #########################################################################################
+###########################################################################################
                                             
 if __name__ == '__main__':
      
     proc = input("-- Presione 1 para listar pokemones, 2 para buscar por nombre, otro valor para salir del programa: ")
     
-    if proc  == "1":
-        #url = 'https://pokeapi.co/api/v2/pokemon-form/'
-        print("Se muestra listado de 20 pokemones")
+    if proc  == "1": \
+        #url = 'https://pokeapi.co/api/v2/pokemon-form/' \
+        print("Se muestra listado de 20 pokemones") \
         get_poke()
 
-    elif proc  == "2":
-        url_name='https://pokeapi.co/api/v2/pokemon/'
+    elif proc  == "2": \
+        url_name='https://pokeapi.co/api/v2/pokemon/' \
         main()
 
-    else: 
-        print("Has elegido salir del programa")
+    else:  \
+        print("Has elegido salir del programa") \
         exit
 
 ## Test view
