@@ -27,20 +27,21 @@ Para ejecutar se deben instalar las librerias de python
 --> pip install Flask
 
 ##Codigo proceso 1
-from flask import Flask, jsonify, request
+from flask import Flask, jsonify
 
 app = Flask(__name__)
 
 from list_poke import list_poke
 from name_poke import name_poke
 
-# Get Data Routes
+#función para obtener la visualización del JSON de forma local en la ruta http://localhost:4000/list_poke
 @app.route('/lis_poke')
 def getListPoke():
     # return jsonify(products)
     return jsonify({'lis_poke': list_poke})
 
-# Get Data Routes
+
+#función para obtener la visualización del JSON de forma local en la ruta http://localhost:4000/nombre
 @app.route('/nombre')
 def getNamePoke():
     # return jsonify(products)
@@ -49,7 +50,7 @@ def getNamePoke():
 if __name__ == '__main__':
     app.run(debug=True, port=4000)
     
-##______________________________________________________________________________________________________
+##-----------------------------------------------------------------------------
 
 ##Codigo proceso 2
 import requests
@@ -83,7 +84,7 @@ def get_poke(url='https://pokeapi.co/api/v2/pokemon-form/', offset=0):
                     exit
                 else: print("Valor errado") 
                 
-##########################################################################################################
+###########################################################################################
 
 def main ():
     nombre = input("-- Introduzca el nombre del pokemon: ")
@@ -104,7 +105,7 @@ def get_poke_name(url_v=""):
 
         return data 
 
-############################################################################################################
+###########################################################################################
                                             
 if __name__ == '__main__':
      
