@@ -102,22 +102,23 @@ def get_poke_name(url_v=""): \
     if resp.status_code == 200: \
         data = resp.json() \
         return data 
-###########################################################################################                                           
+        
+#llamado de funciones  \                                     
 if __name__ == '__main__':
      
     proc = input("-- Presione 1 para listar pokemones, 2 para buscar por nombre, otro valor para salir del programa: ")
    
-    if proc  == "1": \
-        #url = 'https://pokeapi.co/api/v2/pokemon-form/' \
-        print("Se muestra listado de 20 pokemones") \
+    if proc  == "1": 
+        #url = 'https://pokeapi.co/api/v2/pokemon-form/' 
+        print("Se muestra listado de 20 pokemones") 
         get_poke()
 
-    elif proc  == "2": \
-        url_name='https://pokeapi.co/api/v2/pokemon/' \
+    elif proc  == "2": 
+        url_name='https://pokeapi.co/api/v2/pokemon/' 
         main()
-
-    else:  \
-        print("Has elegido salir del programa") \
+        
+    else: 
+        print("Has elegido salir del programa") 
         exit
 
 ## Test view
