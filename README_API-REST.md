@@ -123,6 +123,4 @@ if __name__ == '__main__':
         exit
 
 ## Test view
-Insert here an image of the preview if your project has one. The image can be into the project, you have to indicate the route and look like this.
-
-![](/preview.jpg)
+![](/se agregaran imagenes)
