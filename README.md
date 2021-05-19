@@ -7,7 +7,7 @@ Desarrollo de dos procesos en python. \
 
 ## Información 
 Proceso 1: \
-  Para levantar dos json con el uso de Flask: \ 
+  Para levantar dos json con el uso de Flask: 
     Tenemos el proceso llamado app.py que levanta los json que se encuentran dentro de los archivos list_poke.py y name_poke.py. 
 
 Proceso 2: \
