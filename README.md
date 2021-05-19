@@ -103,7 +103,7 @@ def get_poke_name(url_v=""): \
         data = resp.json() \
         return data 
         
-#llamado de funciones  \                                     
+#llamado de funciones                                       
 if __name__ == '__main__':
      
     proc = input("-- Presione 1 para listar pokemones, 2 para buscar por nombre, otro valor para salir del programa: ")
