@@ -54,7 +54,7 @@ if __name__ == '__main__': \
 ## Codigo proceso 2
 import requests
 
-#Listado de pokemon
+#Listado de pokemon \
 def get_poke(url='https://pokeapi.co/api/v2/pokemon-form/', offset=0): \
     var = {'offset' : offset} if offset else {}
 
@@ -101,12 +101,8 @@ def get_poke_name(url_v=""):
     resp = requests.get(url_v)
     if resp.status_code == 200:
         data = resp.json()
-       # print(resp.json())
-
         return data 
-
-###########################################################################################
-                                            
+###########################################################################################                                           
 if __name__ == '__main__':
      
     proc = input("-- Presione 1 para listar pokemones, 2 para buscar por nombre, otro valor para salir del programa: ")
