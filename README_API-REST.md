@@ -1,56 +1,21 @@
 # API-REST
 
-Desarrollo de dos procesos en python. \
-1- Uso de Flask para levantar dos json. \
-2- Proceso que consume la API de pokemon. 
-
+Proceso que consume la API de pokemon. 
 
 ## Información 
-## Proceso 1: 
-  Para levantar dos json con el uso de Flask: 
-    Tenemos el proceso llamado app.py que levanta los json que se encuentran dentro de los archivos list_poke.py y name_poke.py. 
 
-## Proceso 2: 
 Luego tenemos el proceso main.py el cual consume la API de pokemon https://pokeapi.co/api/v2/pokemon/. \
 El mismo está divido dos partes:\
   Parte 1. Listar nombres de pokemones de 20 en 20 por offset. siempre y cuando el usuario desee seguir listando. \
   Parte 2. Dado el nombre de un pokemon mostrar el mismo por pantalla. 
 
 ## Visualización de los procesos. 
-## Proceso 1:
-https://github.com/carlosbrito20/API-REST/blob/main/app.py
-## Proceso 2:
 https://github.com/carlosbrito20/API-REST/blob/main/main.py
 
 ## Ejecución
 Para ejecutar se deben instalar las librerias de python \
 --> Ejecutar en visual studio code \
 --> pip install requests \
---> pip install Flask 
-
-## Codigo proceso 1
-from flask import Flask, jsonify
-
-app = Flask(__name__)
-
-from list_poke import list_poke
-from name_poke import name_poke
-
-#función para obtener la visualización del JSON de forma local en la ruta http://localhost:4000/list_poke \
-@app.route('/lis_poke') \
-def getListPoke(): \
-    return jsonify({'lis_poke': list_poke})
-
-
-#función para obtener la visualización del JSON de forma local en la ruta http://localhost:4000/nombre \
-@app.route('/nombre') \
-def getNamePoke(): \
-    return jsonify({'nombre': name_poke})
-
-if __name__ == '__main__': \
-    app.run(debug=True, port=4000)
-    
-## -----------------------------------------------------------------------------
 
 ## Codigo proceso 2
 import requests
